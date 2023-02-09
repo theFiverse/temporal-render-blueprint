@@ -3,7 +3,7 @@ databases:
   databaseName: temporal
   user: temporal
   plan: Starter
-  region: oregon
+  region: singapore
 
 envVarGroups:
   - name: temporal-shared
@@ -24,7 +24,7 @@ services:
   name: temporal-elasticsearch
   autoDeploy: false
   plan: Starter
-  region: oregon
+  region: singapore
   env: docker
   dockerfilePath: ./temporal-cluster/elasticsearch/Dockerfile
   disk:
@@ -54,7 +54,7 @@ services:
   name: temporal-frontend
   autoDeploy: false
   plan: Starter
-  region: oregon
+  region: singapore
   env: docker
   dockerfilePath: ./temporal-cluster/server/auto-setup/Dockerfile
   scaling:
@@ -104,7 +104,7 @@ services:
   name: temporal-history
   autoDeploy: false
   plan: Starter
-  region: oregon
+  region: singapore
   env: docker
   dockerfilePath: ./temporal-cluster/server/Dockerfile
   scaling:
@@ -151,7 +151,7 @@ services:
   name: temporal-matching
   autoDeploy: false
   plan: Starter
-  region: oregon
+  region: singapore
   env: docker
   dockerfilePath: ./temporal-cluster/server/Dockerfile
   scaling:
@@ -198,7 +198,7 @@ services:
   autoDeploy: false
   name: temporal-worker
   plan: Starter
-  region: oregon
+  region: singapore
   env: docker
   dockerfilePath: ./temporal-cluster/server/Dockerfile
   scaling:
@@ -252,7 +252,7 @@ services:
   name: temporal-ui
   autoDeploy: false
   plan: Starter
-  region: oregon
+  region: singapore
   env: docker
   dockerfilePath: ./temporal-cluster/web/Dockerfile
   envVars:
@@ -272,7 +272,7 @@ services:
 #   repo: https://github.com/render-examples/temporal-rest-proxy
 #   autoDeploy: false
 #   plan: Starter
-#   region: oregon
+#   region: singapore
 #   env: go
 #   buildCommand: go build rest-proxy/main.go
 #   startCommand: ./main
@@ -288,7 +288,7 @@ services:
   repo: https://github.com/render-examples/sample-temporal-app
   name: app-workflow-trigger
   plan: Starter
-  region: oregon
+  region: singapore
   env: go
   buildCommand: go build start/main.go
   startCommand: ./main
@@ -303,7 +303,7 @@ services:
   repo: https://github.com/render-examples/sample-temporal-app
   name: app-worker
   plan: Starter
-  region: oregon
+  region: singapore
   env: go
   buildCommand: go build worker/main.go
   startCommand: ./main
